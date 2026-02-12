@@ -34,12 +34,12 @@
     }
 
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1596495578065-6e0763fa1178');
+      background-image: url('college.jpg');
       background-size: cover;
       background-position: center;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 140px 20px;
       position: relative;
     }
 
@@ -50,7 +50,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 33, 71, 0.7);
+      background: rgba(0, 33, 71, 0.75);
     }
 
     .hero-content {
@@ -83,17 +83,9 @@
       color: white;
     }
 
-    .apply-btn:hover {
-      background-color: #d48806;
-    }
-
     .prospectus-btn {
       background-color: #004080;
       color: white;
-    }
-
-    .prospectus-btn:hover {
-      background-color: #001f3f;
     }
 
     .stats {
@@ -112,27 +104,6 @@
       margin: 0;
     }
 
-    .features {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 60px 20px;
-      gap: 30px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      width: 260px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .card h3 {
-      color: #004080;
-    }
-
     footer {
       background: #002147;
       color: white;
@@ -144,7 +115,6 @@
 
     df-messenger {
       --df-messenger-button-titlebar-color: #004080;
-      --df-messenger-chat-background-color: #f4f6fa;
       --df-messenger-user-message: #004080;
     }
   </style>
@@ -165,7 +135,7 @@
 <section class="hero">
   <div class="hero-content">
     <h2>Welcome to Rivermark College</h2>
-    <p>Ask about B.Tech, MCA, BCA admissions, eligibility, and fees.</p>
+    <p>Admissions Open for B.Tech, MCA, and BCA Programs</p>
 
     <div class="buttons">
       <button class="apply-btn">Apply Now</button>
@@ -193,26 +163,23 @@
   </div>
 </section>
 
-<section class="features">
-  <div class="card">
-    <h3>💻 B.Tech</h3>
-    <p>Specializations in AI, Data Science, and Computer Engineering.</p>
-  </div>
-
-  <div class="card">
-    <h3>🖥 MCA</h3>
-    <p>Advanced software development and enterprise applications.</p>
-  </div>
-
-  <div class="card">
-    <h3>📱 BCA</h3>
-    <p>Strong foundation in programming and web technologies.</p>
-  </div>
-</section>
-
 <footer>
   © 2026 Rivermark College | Admission Helpdesk
-</foote
+</footer>
+
+<!-- DIALOGFLOW CHATBOT (DO NOT REMOVE) -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="Rivermark Admission Assistant"
+  agent-id="3f11d9e5-0dfa-44d0-8209-81d2dce8e4bb"
+  language-code="en">
+</df-messenger>
+
+</body>
+</html>
+
 
 
 
