@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rivermark College | Admission Portal</title>
+  <title>Rivermark College</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f4f6fa;
+      font-family: 'Poppins', sans-serif;
+      background: #f2f4f8;
       color: #333;
     }
 
+    /* NAVBAR */
     header {
-      background: linear-gradient(90deg, #002147, #004080);
-      color: white;
-      padding: 18px 40px;
+      background: linear-gradient(90deg, #0b2c6b, #163e8c);
+      padding: 18px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: white;
     }
 
     header h1 {
       margin: 0;
       font-size: 22px;
+      font-weight: 600;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 30px;
       font-size: 14px;
     }
 
+    /* HERO */
     .hero {
-      background-image: url('college.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 140px 20px;
       position: relative;
+      background: url('campus.jpg') center/cover no-repeat;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
     }
 
     .hero::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 33, 71, 0.75);
+      background: rgba(0, 0, 0, 0.55);
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
+      max-width: 800px;
     }
 
     .hero h2 {
-      font-size: 45px;
+      font-size: 48px;
       margin-bottom: 15px;
     }
 
@@ -68,62 +73,102 @@
       margin-bottom: 30px;
     }
 
-    .buttons button {
-      padding: 14px 30px;
-      margin: 10px;
-      border: none;
+    .btn {
+      padding: 14px 28px;
       border-radius: 6px;
-      font-size: 15px;
+      border: none;
       cursor: pointer;
-      transition: 0.3s;
+      font-weight: 600;
+      margin: 8px;
     }
 
-    .apply-btn {
-      background-color: #f9a825;
+    .btn-yellow {
+      background: #ffc107;
+    }
+
+    .btn-blue {
+      background: #1f4aa8;
       color: white;
     }
 
-    .prospectus-btn {
-      background-color: #004080;
-      color: white;
-    }
-
+    /* STATS CARD */
     .stats {
+      background: white;
+      width: 85%;
+      margin: -60px auto 50px auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .stats h3 {
+      margin: 0;
+      font-size: 28px;
+      color: #1f4aa8;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 50px 0 30px 0;
+      font-weight: 600;
+      color: #1f4aa8;
+    }
+
+    /* FEATURE CARDS */
+    .cards {
       display: flex;
       justify-content: center;
+      gap: 30px;
       flex-wrap: wrap;
-      gap: 40px;
-      padding: 50px 20px;
+      padding: 0 40px 60px 40px;
+    }
+
+    .card {
       background: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .stats div h2 {
-      color: #004080;
-      font-size: 30px;
-      margin: 0;
+    .card h4 {
+      margin-bottom: 10px;
+      color: #1f4aa8;
     }
 
+    /* FOOTER */
     footer {
-      background: #002147;
+      background: linear-gradient(90deg, #0b2c6b, #163e8c);
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
       font-size: 14px;
     }
 
     df-messenger {
-      --df-messenger-button-titlebar-color: #004080;
-      --df-messenger-user-message: #004080;
+      --df-messenger-button-titlebar-color: #1f4aa8;
+      --df-messenger-user-message: #1f4aa8;
     }
+
+    @media(max-width: 900px) {
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🎓 Rivermark College</h1>
+  <h1>📘 Rivermark College</h1>
   <nav>
     <a href="#">Home</a>
     <a href="#">Programs</a>
@@ -135,39 +180,55 @@
 <section class="hero">
   <div class="hero-content">
     <h2>Welcome to Rivermark College</h2>
-    <p>Admissions Open for B.Tech, MCA, and BCA Programs</p>
-
-    <div class="buttons">
-      <button class="apply-btn">Apply Now</button>
-      <button class="prospectus-btn">Download Prospectus</button>
-    </div>
+    <p>Your gateway to a brighter future. Ask about courses, fees, and admissions.</p>
+    <button class="btn btn-yellow">Apply Now</button>
+    <button class="btn btn-blue">Download Prospectus</button>
   </div>
 </section>
 
-<section class="stats">
+<div class="stats">
   <div>
-    <h2>95%</h2>
+    <h3>95%</h3>
     <p>Placement Rate</p>
   </div>
   <div>
-    <h2>B.Tech</h2>
-    <p>Engineering Program</p>
+    <h3>B.Tech</h3>
+    <p>Engineering</p>
   </div>
   <div>
-    <h2>MCA</h2>
+    <h3>MCA</h3>
     <p>Computer Applications</p>
   </div>
   <div>
-    <h2>BCA</h2>
-    <p>Computer Science Foundation</p>
+    <h3>BCA</h3>
+    <p>Computer Science</p>
   </div>
-</section>
+</div>
+
+<h2 class="section-title">Features</h2>
+
+<div class="cards">
+  <div class="card">
+    <h4>Academic Excellence</h4>
+    <p>Industry-aligned undergraduate and postgraduate programs.</p>
+  </div>
+
+  <div class="card">
+    <h4>AI Admission Assistant</h4>
+    <p>24/7 chatbot support for instant admission guidance.</p>
+  </div>
+
+  <div class="card">
+    <h4>Modern Campus</h4>
+    <p>State-of-the-art facilities and experienced faculty.</p>
+  </div>
+</div>
 
 <footer>
   © 2026 Rivermark College | Admission Helpdesk
 </footer>
 
-<!-- DIALOGFLOW CHATBOT (DO NOT REMOVE) -->
+<!-- Dialogflow Chatbot -->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
 <df-messenger
@@ -179,10 +240,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
