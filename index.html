@@ -1,127 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>XYZ College Admission Portal</title>
+  <title>Rivermark College | Admission Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f4f7fb;
+      background: #f2f5f9;
       color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #003366, #0059b3);
+      background: linear-gradient(90deg, #002147, #004080);
       color: white;
-      padding: 20px 40px;
+      padding: 18px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 24px;
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
       font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
     }
 
     .hero {
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
       background: white;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
     .hero h2 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 15px;
-      color: #003366;
+      color: #002147;
     }
 
     .hero p {
       font-size: 18px;
       color: #555;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      margin-top: 20px;
+      margin-bottom: 35px;
     }
 
     .buttons button {
-      padding: 12px 25px;
+      padding: 14px 30px;
       margin: 10px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 15px;
       cursor: pointer;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
 
     .apply-btn {
-      background-color: #0059b3;
+      background-color: #004080;
       color: white;
     }
 
     .apply-btn:hover {
-      background-color: #003366;
+      background-color: #001f3f;
+      transform: translateY(-2px);
     }
 
     .prospectus-btn {
-      background-color: #ff9900;
+      background-color: #f9a825;
       color: white;
     }
 
     .prospectus-btn:hover {
-      background-color: #cc7a00;
+      background-color: #d48806;
+      transform: translateY(-2px);
     }
 
     .features {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 40px 20px;
+      padding: 60px 20px;
       gap: 30px;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      width: 260px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 30px;
+      width: 270px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
       text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card h3 {
-      color: #0059b3;
+      color: #004080;
+      margin-bottom: 10px;
     }
 
     footer {
-      background: #003366;
+      background: #002147;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 18px;
       font-size: 14px;
+      margin-top: 40px;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Chatbot styling */
+    df-messenger {
+      --df-messenger-button-titlebar-color: #004080;
+      --df-messenger-chat-background-color: #f4f7fb;
+      --df-messenger-font-color: #000;
+      --df-messenger-send-icon: #004080;
+      --df-messenger-user-message: #004080;
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>XYZ College</h1>
+  <div class="logo">🎓 Rivermark College</div>
   <nav>
     <a href="#">Home</a>
-    <a href="#">Courses</a>
+    <a href="#">Programs</a>
     <a href="#">Admissions</a>
     <a href="#">Contact</a>
   </nav>
@@ -129,7 +157,7 @@
 
 <section class="hero">
   <h2>Admission Enquiry Portal</h2>
-  <p>Get instant answers about courses, eligibility, fees, and admission process.</p>
+  <p>Welcome to Rivermark College. Ask our AI assistant about courses, eligibility, fees, and application process.</p>
 
   <div class="buttons">
     <button class="apply-btn">Apply Now</button>
@@ -139,36 +167,37 @@
 
 <section class="features">
   <div class="card">
-    <h3>🎓 Courses</h3>
-    <p>Undergraduate & Postgraduate programs across multiple disciplines.</p>
+    <h3>📚 Academic Excellence</h3>
+    <p>Industry-aligned undergraduate and postgraduate programs.</p>
   </div>
 
   <div class="card">
-    <h3>💬 24/7 Chat Support</h3>
-    <p>Our AI chatbot helps you with instant admission queries.</p>
+    <h3>💬 AI Admission Assistant</h3>
+    <p>24/7 chatbot support for instant admission guidance.</p>
   </div>
 
   <div class="card">
-    <h3>🏆 Excellence</h3>
-    <p>Ranked among top institutions with modern facilities.</p>
+    <h3>🏫 Modern Campus</h3>
+    <p>State-of-the-art facilities and experienced faculty.</p>
   </div>
 </section>
 
 <footer>
-  © 2026 XYZ College | Admission Helpdesk
+  © 2026 Rivermark College | Admission Helpdesk
 </footer>
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
 <df-messenger
   intent="WELCOME"
-  chat-title="Admission Assistant"
+  chat-title="Rivermark Admission Assistant"
   agent-id="3f11d9e5-0dfa-44d0-8209-81d2dce8e4bb"
   language-code="en">
 </df-messenger>
 
 </body>
 </html>
+
 
 
 
