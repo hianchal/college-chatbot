@@ -1,21 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>College Admission Chatbot</title>
+  <title>XYZ College Admission Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0059b3);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #003366;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .apply-btn {
+      background-color: #0059b3;
+      color: white;
+    }
+
+    .apply-btn:hover {
+      background-color: #003366;
+    }
+
+    .prospectus-btn {
+      background-color: #ff9900;
+      color: white;
+    }
+
+    .prospectus-btn:hover {
+      background-color: #cc7a00;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 260px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #0059b3;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>College Admission Enquiry Chatbot</h2>
+<header>
+  <h1>XYZ College</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Admissions</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Admission Enquiry Portal</h2>
+  <p>Get instant answers about courses, eligibility, fees, and admission process.</p>
+
+  <div class="buttons">
+    <button class="apply-btn">Apply Now</button>
+    <button class="prospectus-btn">Download Prospectus</button>
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>🎓 Courses</h3>
+    <p>Undergraduate & Postgraduate programs across multiple disciplines.</p>
+  </div>
+
+  <div class="card">
+    <h3>💬 24/7 Chat Support</h3>
+    <p>Our AI chatbot helps you with instant admission queries.</p>
+  </div>
+
+  <div class="card">
+    <h3>🏆 Excellence</h3>
+    <p>Ranked among top institutions with modern facilities.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 XYZ College | Admission Helpdesk
+</footer>
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
 <df-messenger
   intent="WELCOME"
-  chat-title="Admission Bot"
+  chat-title="Admission Assistant"
   agent-id="3f11d9e5-0dfa-44d0-8209-81d2dce8e4bb"
   language-code="en">
 </df-messenger>
 
 </body>
 </html>
+
 
